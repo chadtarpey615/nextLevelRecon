@@ -31,7 +31,7 @@ const Navbar = () => {
 
             <div className="flex-none pb-3">
                 <button className="btn btn-square btn-ghost">
-                    <img src={image} alt="image" />
+                    <img src={image} alt="work projects" />
                 </button>
             </div>
         </div>
