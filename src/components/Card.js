@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { options } from "../API/Api";
 import images from "../images/paint.jpeg";
 // import "./cards.css"
