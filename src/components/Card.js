@@ -34,7 +34,7 @@ const Card = ({ title, text }) => {
 
                             <div className="card shadow-xl image-full">
                                 <figure>
-                                    <img src={images} />
+                                    <img src={images} alt="images of work" />
                                 </figure>
                                 <div className="justify-end card-body">
                                     <h2 className="card-title">{name}</h2>

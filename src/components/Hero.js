@@ -4,7 +4,7 @@ const Hero = () => {
     return (
         <div className="hero min-h-screen bg-base-200">
             <div className="flex-col hero-content lg:flex-row-reverse">
-                <img src={image} class="max-w-sm rounded-lg shadow-2xl" />
+                <img src={image} class="max-w-sm rounded-lg shadow-2xl" alt="logo pic" />
                 <div>
                     <h1 className="mb-5 text-5xl font-bold">Next Level Recon</h1>
                     <p className="mb-5">
