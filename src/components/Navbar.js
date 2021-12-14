@@ -16,14 +16,14 @@ const Navbar = () => {
             </div>
             <div className="flex-1 px-2 mx-2">
                 <div className="items-stretch hidden lg:flex">
-                    <a className="btn btn-ghost btn-sm rounded-btn">
+                    <a href="_blank" className="btn btn-ghost btn-sm rounded-btn">
                         Home
             </a>
 
-                    <a className="btn btn-ghost btn-sm rounded-btn">
+                    <a href="_blank" className="btn btn-ghost btn-sm rounded-btn">
                         About
             </a>
-                    <a className="btn btn-ghost btn-sm rounded-btn">
+                    <a href="_blank" className="btn btn-ghost btn-sm rounded-btn">
                         Contact
             </a>
                 </div>
@@ -31,7 +31,7 @@ const Navbar = () => {
 
             <div className="flex-none pb-3">
                 <button className="btn btn-square btn-ghost">
-                    <img src={image} alt="" />
+                    <img src={image} alt="image" />
                 </button>
             </div>
         </div>

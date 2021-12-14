@@ -8,23 +8,23 @@ const Footer = () => {
         <footer className="p-10 footer bg-base-200 text-base-content">
             <div>
                 <span className="footer-title">Services</span>
-                <a herf="_blank" className="link link-hover">Branding</a>
-                <a herf="_blank" className="link link-hover">Design</a>
-                <a herf="_blank" className="link link-hover">Marketing</a>
-                <a herf="_blank" className="link link-hover">Advertisement</a>
+                <a href="_blank" className="link link-hover">Branding</a>
+                <a href="_blank" className="link link-hover">Design</a>
+                <a href="_blank" className="link link-hover">Marketing</a>
+                <a href="_blank" className="link link-hover">Advertisement</a>
             </div>
             <div>
                 <span className="footer-title">Company</span>
-                <a herf="_blank" className="link link-hover">About us</a>
-                <a herf="_blank" className="link link-hover">Contact</a>
-                <a herf="_blank" className="link link-hover">Jobs</a>
-                <a herf="_blank" className="link link-hover">Press kit</a>
+                <a href="_blank" className="link link-hover">About us</a>
+                <a href="_blank" className="link link-hover">Contact</a>
+                <a href="_blank" className="link link-hover">Jobs</a>
+                <a href="_blank" className="link link-hover">Press kit</a>
             </div>
             <div>
                 <span className="footer-title">Legal</span>
-                <a herf="_blank" className="link link-hover">Terms of use</a>
-                <a herf="_blank" className="link link-hover">Privacy policy</a>
-                <a herf="_blank" className="link link-hover">Cookie policy</a>
+                <a href="_blank" className="link link-hover">Terms of use</a>
+                <a href="_blank" className="link link-hover">Privacy policy</a>
+                <a href="_blank" className="link link-hover">Cookie policy</a>
             </div>
             <div>
                 <span className="footer-title">Newsletter</span>
