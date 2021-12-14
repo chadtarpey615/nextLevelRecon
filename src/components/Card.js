@@ -14,8 +14,8 @@ const Card = ({ title, text }) => {
 
             <div className="grid grid-cols-1  lg:grid-cols-3 gap-2 md:grid-cols-2">
                 {
-                    options.map((option, i) => {
-                        const { name, image } = option;
+                    options.map((option) => {
+                        const { name } = option;
                         console.log(option)
                         return (
 
