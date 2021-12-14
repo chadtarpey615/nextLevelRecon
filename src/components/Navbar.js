@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom"
 import image from "../images/logo.JPG"
 
 
@@ -16,16 +17,21 @@ const Navbar = () => {
             </div>
             <div className="flex-1 px-2 mx-2">
                 <div className="items-stretch hidden lg:flex">
-                    <a href="_blank" className="btn btn-ghost btn-sm rounded-btn">
-                        Home
-            </a>
 
-                    <a href="_blank" className="btn btn-ghost btn-sm rounded-btn">
-                        About
+                    {/* <a href="/" className="btn btn-ghost btn-sm rounded-btn">
+                        Home
+            </a> */}
+                    <Link to="/" className="btn btn-ghost btn-sm rounded-btn">Home</Link>
+                    <Link to="/pricelist" className="btn btn-ghost btn-sm rounded-btn">Price List</Link>
+
+
+
+                    {/* <a href="/pricelist" className="btn btn-ghost btn-sm rounded-btn">
+                        Price List
             </a>
                     <a href="_blank" className="btn btn-ghost btn-sm rounded-btn">
                         Contact
-            </a>
+            </a> */}
                 </div>
             </div>
 
