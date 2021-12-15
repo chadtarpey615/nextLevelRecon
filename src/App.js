@@ -16,8 +16,6 @@ function App() {
   return (
     <div className="App">
 
-      {/* <Card /> */}
-
       <Router>
         <Navbar />
         <Routes>
