@@ -1,9 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Navbar from "../src/components/Navbar";
-import Hero from "./components/Hero"
-import Divider from "./components/Divider"
-import Card from "./components/Card"
+
 import Footer from "./components/Footer"
 import PriceList from "./pages/PriceList"
 import Home from "./pages/Home"

@@ -42,26 +42,35 @@ export const options = [
 
 export const additionalOptions = [
     {
-        name: "BONDO"
+        name: "BONDO",
+        price: 35.00
     },
 
     {
-        name: "PLASTIC REPAIR"
+        name: "PLASTIC REPAIR",
+        price: 35.00
     },
 
     {
-        name: "EXCESSIVE REPAIR"
+        name: "EXCESSIVE REPAIR",
+        price: 35.00
     },
 
     {
-        name: "TRI-COAT COLORS"
+        name: "TRI-COAT COLORS",
+        price: 35.00
+
+
+
     },
 
     {
-        name: "HYPER SILVER"
+        name: "HYPER SILVER",
+        price: 35.00
     },
 
     {
-        name: "MACHINED"
+        name: "MACHINED",
+        price: 35.00
     },
 ]
