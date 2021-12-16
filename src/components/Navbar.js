@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom"
+import { getAuth } from "firebase/auth"
 import image from "../images/logo.JPG"
 
 
@@ -8,8 +9,13 @@ import image from "../images/logo.JPG"
 
 const Navbar = () => {
     const [mobile, setMobile] = useState(false)
+    const [user, setUser] = useState(null)
+    const auth = getAuth()
 
 
+    useEffect(() => {
+        setUser(auth.currentUser)
+    }, [auth.currentUser])
 
     return (
         <div className="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box">
@@ -23,7 +29,9 @@ const Navbar = () => {
                         <ul tabindex="0" class="p-6 shadow menu dropdown-content bg-base-100 rounded-box w-52">
 
                             <Link className="mb-3" to="/">Home</Link>
-                            <Link to="/pricelist">Price List</Link>
+                            <Link className="mb-3" to="/pricelist">Price List</Link>
+                            <Link className="mb-3" to="/sign-up">Sign Up</Link>
+                            <Link className="mb-3" to="/sign-in">Sign In</Link>
 
                         </ul>
                     )}
@@ -42,7 +50,11 @@ const Navbar = () => {
             </a> */}
                     <Link to="/" className="btn btn-ghost btn-sm rounded-btn">Home</Link>
                     <Link to="/pricelist" className="btn btn-ghost btn-sm rounded-btn">Price List</Link>
-
+                    <Link to="/sign-up" className="btn btn-ghost btn-sm rounded-btn">Sign-up</Link>
+                    <Link to="/sign-in" className="btn btn-ghost btn-sm rounded-btn">Sign-in</Link>
+                    {user && (
+                        <li>{user.displayName}</li>
+                    )}
 
 
                     {/* <a href="/pricelist" className="btn btn-ghost btn-sm rounded-btn">
