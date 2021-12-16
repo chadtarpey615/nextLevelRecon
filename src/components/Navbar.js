@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom"
 import image from "../images/logo.JPG"
 
@@ -7,16 +7,35 @@ import image from "../images/logo.JPG"
 
 
 const Navbar = () => {
+    const [mobile, setMobile] = useState(false)
+
+
 
     return (
         <div className="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box">
+            <div className="dropdown dropdown-hover dropdown-right visible md:invisible lg:invisible">
+
+                <button class="btn btn-square btn-ghost" onClick={() => setMobile(true)}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    {mobile && (
+                        <ul tabindex="0" class="p-6 shadow menu dropdown-content bg-base-100 rounded-box w-52">
+
+                            <Link className="mb-3" to="/">Home</Link>
+                            <Link to="/pricelist">Price List</Link>
+
+                        </ul>
+                    )}
+                </button>
+            </div>
             <div className="flex-none px-2 mx-2">
                 <span className="text-lg font-bold">
                     Next-Level-Recon
           </span>
             </div>
             <div className="flex-1 px-2 mx-2">
-                <div className="items-stretch hidden lg:flex">
+                <div className="items-stretch invisible md:visible lg:flex">
 
                     {/* <a href="/" className="btn btn-ghost btn-sm rounded-btn">
                         Home
